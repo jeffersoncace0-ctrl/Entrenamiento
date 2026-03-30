@@ -5,7 +5,7 @@ estudiantes = {}
 def registrar_estudiante():
     nombre = input("Ingrese el nombre del estudiante: ").strip()
     if not nombre:
-        print("puede estEl nombre no ar vacío.")
+        print("puede este  nombre no archivo vacío.")
         return
     if nombre in estudiantes:
         print("El estudiante ya está registrado.")
@@ -31,28 +31,32 @@ def registrar_materia_nota():
         if materia.lower() == "fin":
             agregar_mas = False
             continue
+        
         if not materia:
             print("El nombre de la materia no puede estar vacío.")
             continue
+        
         if materia in estudiantes[nombre]["materias"]:
             print("Esta materia ya fue registrada para este estudiante.")
             continue
-
+        
         # Validar nota
         nota_valida = False
         while not nota_valida:
+            
             try:
                 nota = float(input(f"Ingrese la nota de {materia} (1 a 5): "))
                 if 1 <= nota <= 5:
                     nota_valida = True
+                    
                 else:
                     print("La nota debe estar entre 1 y 5.")
             except ValueError:
                 print("Ingrese un número válido.")
-
+                
         estudiantes[nombre]["materias"][materia] = nota
         print(f"Materia {materia} con nota {nota} registrada para {nombre}.")
-
+        
 # Función para calcular promedio
 def calcular_promedio(nombre):
     materias = estudiantes[nombre]["materias"]
@@ -66,6 +70,7 @@ def mostrar_informacion():
     if not estudiantes:
         print("No hay estudiantes registrados.")
         return
+    
     print("\n=== Información de todos los estudiantes ===")
     for nombre, datos in estudiantes.items():  # unpack de clave y valor
         print(f"\nEstudiante: {nombre}")
