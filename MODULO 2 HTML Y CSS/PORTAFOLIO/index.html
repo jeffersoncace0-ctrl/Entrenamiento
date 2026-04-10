@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio | Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Jefferson Cacerez</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="mascotas.html">Mis Mascotas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi" class="card">
+            <h2>Sobre mí</h2>
+            <p>Hola, Soy un coder de riwi que esta aprendiendo los fundamentos básicos de programación como <b>PYTHON, HTML, CSS y JAVASCRIPT.</b> Soy una persona extrovertida muy constante cuando quiero lograr mis objetivos, me enfoco mucho en mejorar todos los días y me gusta hablar sobre cualquier tema.</p>
+        </section>
+
+        <section id="proyectos" class="card">
+            <h2>Proyectos en Riwi</h2>
+            <ul>
+                <li><a href="https://github.com/jeffersoncace0-ctrl/jeffersoncace0-ctrl" target="_blank" rel="noopener noreferrer">Proyecto 1: Repositorio de Github</a></li>
+                <li><a href="https://github.com/jeffersoncace0-ctrl/semanas-entregable-/tree/feature/1-codigo" target="_blank" rel="noopener noreferrer">Proyecto 2: Modulo 1</a></li>
+                <li><a href="https://github.com/jeffersoncace0-ctrl/CalculadoraDeNotas/tree/feature/3-codigo" target="_blank" rel="noopener noreferrer">Proyecto 3: Entrenamientos</a></li>
+                <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">Buscar en Google</a></li>
+            </ul>
+        </section>
+
+        <section id="contacto" class="card">
+            <h2>Contacto</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Jefferson Cacerez..." minlength="3" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">ASUNTO:</label><br>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe aquí tu mensaje..." style="width: 100%;"></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Creado con fines educativos</p>
+    </footer>
+
+</body>
+</html>
