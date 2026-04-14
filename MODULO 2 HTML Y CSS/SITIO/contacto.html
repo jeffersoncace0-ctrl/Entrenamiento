@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BaJaC — Contacto</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Ba<span>JaC</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html" class="active nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero" id="top">
+    <div class="page-hero-bg" style="background-image: url('img/GRUPOMOTERO.jpeg');"></div>
+      
+    <div class="page-hero-content">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> / Contacto</div>
+      <h1>HABLEMOS <span>BIKER</span></h1>
+    </div>
+  </div>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Escríbenos</h3>
+          <h2>ESTAMOS PARA<br><span style="color:var(--red)">AYUDARTE</span></h2>
+          <p>
+            ¿Tienes dudas sobre un producto, quieres unirte a una rodada o simplemente
+            saludar? Nos encanta conectar con la comunidad biker. Escríbenos y te
+            respondemos en menos de 24 a 48 horas.
+          </p>
+
+          <div class="contact-item">
+            <div class="contact-item-icon"></div>
+            <div>
+              <span class="contact-item-label">Dirección</span>
+              <span class="contact-item-value">Cra. 35b # 27C-98, Soledad, Atlántico, Colombia</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"></div>
+            <div>
+              <span class="contact-item-label">Teléfono</span>
+              <span class="contact-item-value">+57 301 4480474</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"></div>
+            <div>
+              <span class="contact-item-label">Correo</span>
+              <span class="contact-item-value">edgarbajac@gmail.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon"></div>
+            <div>
+              <span class="contact-item-label">Horario</span>
+              <span class="contact-item-value">Lun - Dom: 9:00 AM a 5:00 PM</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <h3 style="margin-bottom: 1rem;">Síguenos</h3>
+            <div style="display: flex; gap: 1rem;">
+              <a href="https://www.instagram.com/edgarbajac?igsh=YXRyZWZpN29hNXk4" target="_blank" class="social-link" aria-label="Instagram">Instagram</a>
+              <a href="https://www.facebook.com/EBajac" target="_blank" class="social-link" aria-label="Facebook">Facebook</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <!-- FORMULARIO INICIADO -->
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo *</label>
+              <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico *</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto *</label>
+              <select id="asunto" name="asunto" class="form-control" required>
+                <option value="" disabled selected>Selecciona un tema...</option>
+                <option value="producto">Consulta sobre producto</option>
+                <option value="pedido">Pedido / Compra</option>
+                <option value="eventos">Rodadas y eventos</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje <span style="color:var(--white-mid); font-weight:400;">(Opcional)</span></label>
+              <textarea id="mensaje" name="mensaje" class="form-control" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              Enviar Mensaje ↗
+            </button>
+            <p class="form-note">* Campos obligatorios. Respondemos en menos de 24 horas.</p>
+          </form>
+        </div>
+
+      </div>
+
+<div style="width:100%; height:400px; margin-top:4rem;">
+  <iframe 
+  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3917.421485557527!2d-74.7743!3d10.9315!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef5cd6735e5be75%3A0xba07756cd80c32dd!2sCra.%2035b%20%23%2027C-98%2C%20Soledad%2C%20Atl%C3%A1ntico!5e0!3m2!1sen!2sco!4v1776006707321!5m2!1sen!2sco"
+  width="1250" 
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </iframe>
+</div>
+
+    </div>
+  </section>
+
+  <section style="background: var(--black);">
+    <div class="container">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title" style="margin-bottom: 1.5rem;">PREGUNTAS <span class="accent">FRECUENTES</span></h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;" class="faq-grid">
+        <div class="feature-card">
+          <div class="feature-title">¿Hacen envíos a todo Barranquilla?</div>
+          <p class="feature-text">Sí, enviamos a todas BARRANQUILLA y sus municipios cercanos. El tiempo estimado es de 1 - 3 días hábiles.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">¿Puedo cambiar o devolver un producto?</div>
+          <p class="feature-text">Aceptamos cambios y devoluciones de un producto si el producto no ha sido usado y ni abrierdo de su empaque original.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">¿Los productos tienen garantía?</div>
+          <p class="feature-text">Todos nuestros productos tienen garantía mínima de 1 mes contra defectos de fabricación. Los intercomunicadores y equipamiento de seguridad: 2 meses .</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-title">¿Cómo unirme a las rodadas?</div>
+          <p class="feature-text">Contáctanos por este formulario o únete a nuestras redes sociales. Las rodadas se anunciaran con anticipación por todas nuestras paginas oficiales.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand-name">Ba<span>JaC</span></div>
+        <p class="footer-tagline">La carretera es nuestra casa.<br>Colombia, Barranquilla, Atlantico</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/edgarbajac?igsh=YXRyZWZpN29hNXk4" target="_blank" class="social-link" aria-label="Instagram"></a>
+          <a href="https://www.facebook.com/EBajac" target="_blank" class="social-link" aria-label="Facebook"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+  
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:edgarbajac@gmail.com">edgarbajac@gmail.com</a></li>
+          <li><a href="tel:+573014480474">+57 3014480474</a></li>
+          <li><a href="#">Barranquilla, Colombia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span> 2026 Riwi. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

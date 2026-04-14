@@ -1,0 +1,92 @@
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Italic Font',  
+}
+
+/* Barra superior */
+header {
+    background-color: #394351;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    position: sticky;
+    top: 5;
+    width: 100%;
+}
+
+/* Contenedor de la imagen y el título */
+nav {
+    display: flex;
+    align-items: center; /* Alineación vertical perfecta */
+    max-width: 12000px;
+    margin: 0 auto;
+}
+
+/* La imagen pequeña a la izquierda */
+.nav-icon {
+    width: 100px;
+    height: auto;
+    margin-right: 25px; /* Espacio entre imagen y texto */
+}
+
+/* El título */
+.nav-title {
+    font-size: 2.5rem;
+    font-weight: solid  rgb(252, 115, 3) bold;
+    letter-spacing: 1cap;
+}
+
+main {
+    padding: 60px;
+    text-align: center;
+}
+/* Contenedor principal de tarjetas */
+.characters-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: #a31010; /* Fondo oscuro para que resalten */
+    min-height: 100vh;
+}
+
+/* Estilo de la Tarjeta */
+.card {
+    background-color: #e0e9e1;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0 4px 15px rgb(8, 8, 8);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.image-box {
+    background-color: #bb9696;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    height: 90%;
+    object-fit: contain;
+}
+
+.info-box {
+    padding: 20px;
+    color: rgb(5, 5, 5);
+}
+
+.name {
+    color: #eca407; /* Color naranja Dragon Ball */
+    margin-bottom: 5px;
+}
+

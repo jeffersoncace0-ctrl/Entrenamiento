@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BaJaC — Servicios y; Catálogo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">Ba<span>JaC</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+      <li><a href="servicios.html" class="active">Servicios</a></li>
+      <li><a href="contacto.html" class="nav-cta">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-hero" id="top">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=1600&q=80');"></div>
+    <div class="page-hero-content">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> / Servicios</div>
+      <h1>SERVICIOS Y <span>CATÁLOGO</span></h1>
+    </div>
+  </div>
+
+  <section style="background: var(--black);">
+    <div class="container">
+      <div class="section-tag">Lo que ofrecemos</div>
+      <h2 class="section-title">NUESTROS <span class="accent">SERVICIOS</span></h2>
+      <p class="section-lead">Más que productos: una experiencia completa para el motociclista.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"></div>
+          <div class="feature-title">Tienda Fisica</div>
+          <p class="feature-text">Visítanos en Barranquilla. Asesores expertos, prueba de equipamiento y atención personalizada de lunes a domingo.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"></div>
+          <div class="feature-title">Tienda Online</div>
+          <p class="feature-text">Compra desde cualquier lugar. Envíos a toda Barranquilla con seguimiento en tiempo real y cambio sin costo.</p>
+        </div>
+      
+        <div class="feature-card">
+          <div class="feature-icon"></div>
+          <div class="feature-title">Organización de Rodadas</div>
+          <p class="feature-text">Rutas establecidas, eventos regionales y nacionales con seguimiento de apoyo en ruta mas acompañamiento por parte del club </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"></div>
+          <div class="feature-title">Pedidos</div>
+          <p class="feature-text">¿No encontraste lo que necesitas? Gestionamos importaciones directas de piezas y equipos especifico que necesites</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section style="background: var(--black-mid);">
+  <div class="container">
+    <div class="section-tag">Catálogo</div>
+    <h2 class="section-title">NUESTROS <span class="accent">PRODUCTOS</span></h2>
+    
+    <div class="catalog-filters">
+      <button class="filter-btn active" onclick="filterProducts('todos', this)">Todos</button>
+
+    </div>
+
+    <div class="catalog-grid" id="catalogGrid">
+
+      <div class="product-card" data-cat="Intercomunicadores">
+        <div class="product-img-container">
+          <img src="img/Q58_1.webp" alt="Intercomunicador" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">Intercomunicadores</span>
+          <div class="product-name">Intercomunicador Q58-max</div>
+          <p class="product-desc">Comunicación inalámbrica Bluetooth, reducción de ruido y larga batería.</p>
+          <div class="product-price">$160.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/candado.webp" alt="Candado" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">Candado</span>
+          <div class="product-name">Candado de Disco con Alarma</div>
+          <p class="product-desc">Bloqueo de rueda con alarma sonora de alta potencia y resistente al agua.</p>
+          <div class="product-price">$50.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+        </div>
+      </div>
+
+      <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/embudo.webp" alt="Embudo" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">Embudo</span>
+          <div class="product-name">Embudo Plástico</div>
+          <p class="product-desc">Embudo plástico resistente para verter aceite de motor fácilmente.</p>
+          <div class="product-price">$8.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+        </div>
+      </div>
+      
+        <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/arnes.png" alt="chaleco reflectivo ajustable" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">Arnés de Chaleco Reflector Ajustable</span>
+          <div class="product-name">Arnés de Chaleco Reflector Ajustable</div>
+          <p class="product-desc">Arnés de Chaleco Reflector Ajustable</p>
+          <div class="product-price">$20.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+        </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/buho.png" alt="EXPLORADORAS LED BUHO" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">EXPLORADORAS LED BUHO</span>
+          <div class="product-name">EXPLORADORAS LED BUHO</div>
+          <p class="product-desc">Foco LED RGB Auxiliar para Motocicleta con Diseño de Búho | Luz de Trabajo con Kit de Soporte, Adecuado para Motocicletas, Bicicletas Eléctricas, Motos Todoterreno y Vehículos Todo Terreno</p>
+          <div class="product-price">$70.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+        </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/rodillera.png" alt="RODILLERA Y CODERA PARA MOTO" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">RODILLERA Y CODERA PARA MOTO</span>
+          <div class="product-name">RODILLERA Y CODERA PARA MOTO</div>
+          <p class="product-desc">4 piezas de rodilleras y coderas para motocicleta, transpirables, para carreras, off-road, deportes al aire libre, protección para motociclista</p>
+          <div class="product-price">$80.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+         </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/sujetador.png" alt="ELASTICO SUJETADOR DE CASCO" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">ELASTICO SUJETADOR DE CASCO</span>
+          <div class="product-name">ELASTICO SUJETADOR DE CASCO</div>
+          <p class="product-desc">Cinturón elástico de 4 en 1 para motocicleta con gancho de alta resistencia y cuerda de tensión potente de 1,5 veces el estiramiento para casco, aseguramiento de equipaje con extremo suelto, duradero y fácil de usar.</p>
+          <div class="product-price">$10.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+
+           </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/pechera.png" alt="PECHERA BIKER #1" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">PECHERA BIKER #1</span>
+          <div class="product-name">PECHERA BIKER #1</div>
+          <p class="product-desc">Pechera BIKER con bolsillo para colocar el celular y grabar tus aventuras
+
+          BOLSILLO INTERNO
+          BOLSILLO MONEDERO
+          BOLSILLO PARA CELULAR
+          CORREAS AJUSTABLES
+          TONOS DIVERSOS.
+
+          Viene sin parches, bolsillo monedero con tela suave del belcro para que la personalizes con tu propio parche</p>
+          <div class="product-price">$65.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+
+           </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/imperniable.png" alt="IMPERMEABLE MOTERO" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">IMPERMEABLE MOTERO</span>
+          <div class="product-name">IMPERMEABLE MOTERO</div>
+          <p class="product-desc">Impermeable motero 4 piezas
+
+          Chaqueta
+          Pantalon
+          Botas
+          Bolso
+
+          PVC Siliconado Calibre 8 Resortado</p>
+          <div class="product-price">$80.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/asistencia.JPG" alt="ASISTENTE ACELERACION" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">ASISTENTE ACELERACION</span>
+          <div class="product-name">ASISTENTE ACELERACION</div>
+          <p class="product-desc">Puños de acelerador para motocicletas, dispositivos de asistencia de acelerador para motos y bicicletas eléctricas, accesorios de larga distancia, puños de manillar y herramientas de asistencia de acelerador.</p>
+          <div class="product-price">$80.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/foro.png" alt="FORRO MOTO CON MALETA" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">FORRO MOTO CON MALETA</span>
+          <div class="product-name">FORRO MOTO CON MALETA</div>
+          <p class="product-desc">Forro para moto con maletero
+
+          Protege tu moto del SOL, LLUVIA, POLVO y ANIMALES.
+
+          Doble faz, interior suave para proteger la pintura, exterior impermeable.
+
+          Riata para ajustar a la llanta y argolla para amarrar.</p>
+          <div class="product-price">$85.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/guandes cortos.png" alt="GUANTES DEDO CORTO" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">GUANTES DEDO CORTO</span>
+          <div class="product-name">GUANTES DEDO CORTO</div>
+          <p class="product-desc">Guantes dedo corto con proteccion resistente.</p>
+          <div class="product-price">$25.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+          <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/protector.png" alt="PROTECTOR DE CALZADO" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">PROTECTOR DE CALZADO/span>
+          <div class="product-name">PROTECTOR DE CALZADO</div>
+          <p class="product-desc">Protector de cambio de marchas de motocicleta de silicona negra, duradero, antideslizante, cubierta universal para botas y zapatillas</p>
+          <div class="product-price">$15.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+      <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/soporte de casco.png" alt="SOPORTE CASCO DE PARED X2" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">SOPORTE CASCO DE PARED X2/span>
+          <div class="product-name">SOPORTE CASCO DE PARED X2</div>
+          <p class="product-desc">Soporte plastico de pared para colcar el casco.</p>
+          <div class="product-price">$20.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+      <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/pierna.png" alt="PIERNERA TACTICA" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">PIERNERA TACTICA/span>
+          <div class="product-name">PIERNERA TACTICA</div>
+          <p class="product-desc">Bandolera de Alta Calidad Knight Tactical con Carcasa Rígida y Diseño Duradero Multicompartimentos para Montar en Moto, Ciclismo al Aire Libre y Uso Diario</p>
+          <div class="product-price">$45.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+      <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/tang.png" alt="TANK BAG" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">TANK BAG/span>
+          <div class="product-name">TANK BAG</div>
+          <p class="product-desc">Tank bag para tanques metálicos. Se sujeta con 4 imanes potentes.</p>
+          <div class="product-price">$80.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+      <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/balapa.png" alt="BALACLAVA" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">BALACLAVA/span>
+          <div class="product-name">BALACLAVA</div>
+          <p class="product-desc">Máscaras Balaclava para Hombres y Mujeres, Cubierta Completa del Rostro, Transpirables, Ligera, Bufanda Antiviento para Motocicleta.</p>
+          <div class="product-price">$12.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+      <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/guandes con proteccion .png" alt="GUANTES CON PROTECCIÓN" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">GUANTES CON PROTECCIÓN/span>
+          <div class="product-name">GUANTES CON PROTECCIÓN</div>
+          <p class="product-desc">Guantes con protección para motociclista cerrado</p>
+          <div class="product-price">$40.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+
+        <div class="product-card" data-cat="Accesorios">
+        <div class="product-img-container">
+          <img src="img/cepillo.png" alt="CEPILLO LIMPIA CADENA" class="product-img">
+        </div>
+        <div class="product-body">
+          <span class="product-badge">CEPILLO LIMPIA CADENA/span>
+          <div class="product-name">CEPILLO LIMPIA CADENA</div>
+          <p class="product-desc">Cepillo para Limpieza de Cadena de Motocicleta Resistente</p>
+          <div class="product-price">$14.000 <span>COP</span></div>
+          <a href="contacto.html" class="btn btn-primary">Pedir</a>
+          </div>
+      </div>
+        
+  <div class="cta-banner">
+    <div class="cta-banner-bg"></div>
+    <div class="cta-banner-content">
+      <h3>¿NO ENCONTRASTE<br><span style="color:var(--red)">LO QUE BUSCAS?</span></h3>
+      <p>Escríbenos y gestionamos la importación o búsqueda de cualquier producto para ti.</p>
+      <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+    </div>
+  </div>
+
+  </div>
+  <div class="footer-bottom">
+    <span>2026 Riwi. Todos los derechos reservados.</span>
+
+    </div>
+  </script>
+</body>
+</html>
