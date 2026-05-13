@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API products</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-zinc-950 text-white min-h-screen">
+
+    <!-- HEADER -->
+    <header class="border-b border-zinc-800 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <h1 class="text-xl font-bold">
+                🛒 Product Store
+            </h1>
+        </div>
+    </header>
+
+    <!-- BUSCADOR -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+
+        <form id="frm-search" class="flex gap-4">
+
+            <input 
+                type="text" 
+                placeholder="Search products (ex: phone)"
+                class="flex-1 bg-zinc-900 border border-zinc-700 rounded-xl px-4 py-3 outline-none"
+            />
+
+            <button 
+                type="submit"
+                class="bg-blue-600 px-6 rounded-xl"
+            >
+                Search
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- INFO -->
+    <section class="max-w-7xl mx-auto px-6 flex justify-between items-center mb-4">
+
+        <h2 class="text-2xl font-bold">
+            Results
+        </h2>
+
+        <span class="text-zinc-400">
+            <span id="quantity">0</span> founded products
+        </span>
+
+    </section>
+
+    <!-- GRID PRODUCTOS -->
+    <section class="max-w-7xl mx-auto px-6 pb-10">
+
+        <div 
+            id="search-results"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
+
+        
+        </div>
+
+    </section>
+
+    <!-- PAGINACIÓN -->
+    <section class="max-w-7xl mx-auto px-6 pb-12">
+
+        <div class="flex justify-center items-center gap-4">
+
+            <button 
+                id="prevBtn"
+                class="bg-zinc-800 px-5 py-2 rounded-xl"
+            >
+                previous
+            </button>
+
+            <span 
+                id="pageInfo"
+                class="text-zinc-300"
+            >
+                Page 1
+            </span>
+
+            <button 
+                id="nextBtn"
+                class="bg-zinc-800 px-5 py-2 rounded-xl"
+            >
+                next
+            </button>
+
+        </div>
+
+    </section>
+
+    
+    <script type="module" src="app.js"></script>
+
+</body>
+
+</html>
